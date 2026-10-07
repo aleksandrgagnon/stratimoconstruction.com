@@ -11,8 +11,10 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Stratimo Construction | Entrepreneur Général, Rénovations &amp; Excavation | Montréal, Laval, Rive-Nord</title>
-<meta name="description" content="Stratimo Construction — entrepreneur général, rénovations résidentielles et commerciales, excavation, fondations, drainage et béton à Montréal, Laval, Rive-Nord et les Laurentides. RBQ 5875-3856-01.">
+<title>Entrepreneur général à Montréal et Laval | Construction et rénovation | Stratimo Construction</title>
+<meta name="description" content="Entrepreneur général licencié RBQ à Montréal, Laval et Rive-Nord : construction neuve, agrandissement, rénovation résidentielle et commerciale, réparation après sinistre, gestion de projet clé en main. Soumission gratuite.">
+<link rel="canonical" href="https://stratimoconstruction.com/">
+<link rel="icon" href="logo.png">
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -408,156 +410,112 @@ footer{background:var(--ink3)}
 .div-t a:hover{color:var(--steel)}
 .div-more{display:inline-block;margin-top:1.4rem;font-family:var(--fh);font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:var(--navy);padding:.7rem 1.5rem;text-decoration:none;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%);transition:background .2s}
 .div-more:hover{background:var(--navy2)}
+
+/* ===== PAGES DE SERVICE ===== */
+.ph{padding-top:72px;background:var(--ink);position:relative;overflow:hidden}
+.ph-inner{position:relative;z-index:1;display:grid;grid-template-columns:58fr 42fr;min-height:62vh}
+.ph-l{padding:5vw 4vw 5vw 7vw;display:flex;flex-direction:column;justify-content:center;border-right:1px solid var(--line)}
+.ph-r{display:flex;align-items:center;justify-content:center;padding:4vw 3.5vw;background:var(--ink2)}
+.crumbs{font-family:var(--fh);font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:1.6rem}
+.crumbs a{color:var(--steel);text-decoration:none}
+.crumbs a:hover{text-decoration:underline}
+.crumbs span{margin:0 .5rem;opacity:.6}
+.ph h1{font-size:clamp(3rem,5.6vw,5.4rem);margin-bottom:1.6rem}
+.ph .hero-desc{max-width:520px}
+.sec{padding:6vw 8vw;border-top:1px solid var(--line)}
+.sec.alt{background:var(--ink2)}
+.sec-head{max-width:640px;margin-bottom:3rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.card{background:#fff;padding:2rem 1.8rem;transition:background .2s}
+.card:hover{background:var(--ink2)}
+.card-n{font-family:var(--fh);font-size:.7rem;font-weight:700;letter-spacing:.14em;color:var(--steel);margin-bottom:1rem}
+.card h3{font-family:var(--fh);font-size:1.15rem;font-weight:700;text-transform:uppercase;letter-spacing:.03em;color:var(--white);margin-bottom:.6rem}
+.card p{font-size:.86rem;color:var(--silver);line-height:1.7;font-weight:300}
+.zone{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.4rem}
+.zone span{font-family:var(--fh);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--light);border:1px solid var(--line2);padding:.45rem 1rem;background:#fff}
+.faq{max-width:820px}
+.faq details{border-bottom:1px solid var(--line2);padding:1.2rem 0}
+.faq summary{cursor:pointer;font-family:var(--fh);font-size:1.05rem;font-weight:700;text-transform:uppercase;letter-spacing:.03em;color:var(--white);list-style:none;display:flex;justify-content:space-between;gap:1rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:'+';color:var(--steel);font-size:1.3rem;line-height:1}
+.faq details[open] summary::after{content:'–'}
+.faq details p{font-size:.9rem;color:var(--silver);line-height:1.75;margin-top:.7rem;font-weight:300}
+.others{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+.other{display:block;background:#fff;padding:2rem;text-decoration:none;transition:background .2s}
+.other:hover{background:var(--ink2)}
+.other small{font-family:var(--fh);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--steel)}
+.other strong{display:block;font-family:var(--fh);font-size:1.6rem;font-weight:800;text-transform:uppercase;color:var(--white);margin:.4rem 0 .5rem;line-height:1}
+.other span{font-size:.85rem;color:var(--silver);font-weight:300}
+.nav-logo a{display:block}
+.nav-burger{display:none;width:44px;height:44px;border:1px solid var(--line2);background:#fff;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:0}
+.nav-burger span{display:block;width:20px;height:2px;background:var(--white);transition:transform .2s,opacity .2s}
+nav.open .nav-burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+nav.open .nav-burger span:nth-child(2){opacity:0}
+nav.open .nav-burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.nav-links a.on{color:var(--white)}
+@media(max-width:900px){
+  .ph-inner{grid-template-columns:1fr}
+  .ph-l{border-right:none;border-bottom:1px solid var(--line);padding:3.5rem 6vw}
+  .ph-r{padding:2.5rem 6vw}
+  .cards{grid-template-columns:1fr}
+  .others{grid-template-columns:1fr}
+  .sec{padding:3.5rem 6vw}
+  .nav-burger{display:flex}
+  nav.open .nav-links{display:flex;position:absolute;top:72px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#fff;padding:.4rem 6vw 1.4rem;border-bottom:1px solid var(--line2);box-shadow:0 12px 24px rgba(20,30,60,.08)}
+  nav.open .nav-links a{padding:1rem 0;border-bottom:1px solid var(--line);font-size:.9rem;color:var(--white)}
+  nav.open .nav-links a.nav-cta{margin-top:1rem;border-bottom:none;text-align:center;padding:.9rem 1.5rem}
+  .f-links{flex-wrap:wrap;gap:1rem 1.6rem}
+}
 </style>
 </head>
 <body>
 
 <nav id="nav">
-  <div class="nav-logo"><img src="logo.png" alt="Stratimo Construction"></div>
+  <div class="nav-logo"><a href="./"><img src="logo.png" alt="Stratimo Construction"></a></div>
   <div class="nav-links">
-    <a href="#services">Services</a>
-    <a href="#why">Expertise</a>
-    <a href="#process">Processus</a>
+    <a href="./" class="on">Entrepreneur général</a>
+    <a href="portes-et-fenetres/">Portes et fenêtres</a>
+    <a href="excavation/">Excavation</a>
     <a href="#contact" class="nav-cta">Soumission gratuite</a>
   </div>
+  <button class="nav-burger" id="nav-burger" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
 </nav>
 
-<section class="hero">
+<section class="ph">
   <div class="hero-grid"></div>
   <div class="hero-glow"></div>
-  <div class="hero-wm"><img src="logo.png" alt=""></div>
-
-  <div class="hero-inner">
-    <div class="hero-l">
-      <div class="eyebrow">Entrepreneur général — Grand Montréal</div>
-      <h1>Innovation, Qualité, Transparence - <span class="stroke">votre projet, notre engagement..</span></h1>
-      <p class="hero-desc">Entrepreneur général, rénovations résidentielles et commerciales, excavation et travaux de béton. Licencié RBQ, fondé par un expert du secteur.</p>
+  <div class="ph-inner">
+    <div class="ph-l">
+      <div class="eyebrow">Construction et rénovation — Grand Montréal</div>
+      <h1>Entrepreneur général <span class="stroke">construction et rénovation</span></h1>
+      <p class="hero-desc">Construction neuve, agrandissement, rénovation ou réparation après sinistre, résidentielle ou commerciale : Stratimo gère votre projet de A à Z. Un seul interlocuteur du plan à la livraison.</p>
       <div class="btns">
-        <a href="#contact" class="btn-p">Demander un devis →</a>
-        <a href="#services" class="btn-g">Nos services</a>
+        <a href="#contact" class="btn-p">Demander une soumission →</a>
+        <a href="tel:+15144333280" class="btn-g">(514) 433-3280</a>
       </div>
     </div>
-    <div class="hero-r">
-      <div class="hero-logo-main">
-        <img src="logo.png" alt="Stratimo Construction">
-      </div>
+    <div class="ph-r">
       <div class="hero-creds">
-        <div class="cred"><div class="cred-pill">RBQ</div><div><strong>Licencié & assuré</strong><span>No. 5875-3856-01</span></div></div>
+        <div class="cred"><div class="cred-pill">RBQ</div><div><strong>Licencié &amp; assuré</strong><span>No. 5875-3856-01</span></div></div>
         <div class="cred"><div class="cred-pill">24H</div><div><strong>Réponse garantie</strong><span>Chaque demande traitée le jour même</span></div></div>
-        <div class="cred"><div class="cred-pill">MTL</div><div><strong>Grand Montréal</strong><span>Résidentiel & commercial</span></div></div>
+        <div class="cred"><div class="cred-pill">MTL</div><div><strong>Grand Montréal</strong><span>Résidentiel &amp; commercial</span></div></div>
       </div>
-    </div>
-  </div>
-
-  <div class="hero-bar">
-    <div class="hb"><div class="hb-n">RBQ</div><div class="hb-l">Licencié &<br>pleinement assuré</div></div>
-    <div class="hb"><div class="hb-n">24h</div><div class="hb-l">Délai de réponse<br>garanti</div></div>
-    <div class="hb"><div class="hb-n">3</div><div class="hb-l">Spécialités complémentaires<br>sous un même toit</div></div>
-  </div>
-</section>
-
-<!-- BANDE IDENTITAIRE -->
-<div class="id-band">
-  <div class="id-logo"><img src="logo.png" alt="Stratimo Construction"></div>
-  <div class="id-sep"></div>
-  <div class="id-text">
-    <h2>Trois expertises. Une vision.</h2>
-    <p>Stratimo Construction regroupe l'entrepreneuriat général, les portes et fenêtres et l'excavation sous un même toit rigoureux — fondé sur l'expertise terrain et la transparence absolue.</p>
-    <div class="id-tags">
-      <span class="id-tag">Entrepreneur général</span>
-      <span class="id-tag">Portes &amp; fenêtres</span>
-      <span class="id-tag">Excavation</span>
-    </div>
-  </div>
-</div>
-
-<!-- BADGE RBQ -->
-<div class="rbq-band">
-  <div class="rbq-badge">
-    <div class="rbq-icon">RBQ</div>
-    <div class="rbq-text">
-      <strong>Licence entrepreneur général</strong>
-      <span>Régie du bâtiment du Québec</span>
-    </div>
-  </div>
-  <div class="rbq-divider"></div>
-  <div class="rbq-num">
-    <small>Numéro de licence</small>
-    5875-3856-01
-  </div>
-  <div class="rbq-divider"></div>
-  <div class="rbq-ins">
-    <strong>Assurance responsabilité civile</strong>
-    <span>Couverture complète sur chaque chantier</span>
-  </div>
-</div>
-
-<section class="divisions" id="services">
-  <div style="display:flex;flex-direction:column;border-right:1px solid rgba(160,184,216,.05)">
-    <div class="div-card" style="min-height:34vh;border-right:none">
-      <div class="div-hatch"></div><div class="div-n">01</div>
-      <div class="div-body">
-        <div class="div-tag">Construction et rénovation</div>
-        <h2 class="div-t"><a href="entrepreneur-general/">Entrepreneur<br>Général</a></h2>
-        <p class="div-desc">Construction neuve, agrandissement ou rénovation, résidentielle ou commerciale : nous gérons votre projet de A à Z. Un seul interlocuteur du plan à la livraison.</p>
-        <div>
-          <div class="svc">Construction neuve et agrandissements<span class="arr">→</span></div>
-          <div class="svc">Rénovations intérieures et extérieures<span class="arr">→</span></div>
-          <div class="svc">Aménagement de locaux commerciaux<span class="arr">→</span></div>
-          <div class="svc">Immeubles multilogements<span class="arr">→</span></div>
-          <div class="svc">Réparation après sinistre<span class="arr">→</span></div>
-          <div class="svc">Gestion de projet clé en main<span class="arr">→</span></div>
-        </div>
-        <a class="div-more" href="entrepreneur-general/">En savoir plus →</a>
-      </div>
-    </div>
-    <div class="div-card" style="min-height:34vh;border-right:none;border-top:1px solid rgba(160,184,216,.05)">
-      <div class="div-hatch"></div><div class="div-n">02</div>
-      <div class="div-body">
-        <div class="div-tag">Résidentiel &amp; commercial</div>
-        <h2 class="div-t"><a href="portes-et-fenetres/">Portes<br>&amp; Fenêtres</a></h2>
-        <p class="div-desc">Remplacement de portes et fenêtres pour maisons, multilogements et bâtiments commerciaux. Des travaux planifiés pour limiter les dérangements pour vos occupants et vos activités.</p>
-        <div>
-          <div class="svc">Remplacement de fenêtres<span class="arr">→</span></div>
-          <div class="svc">Portes d'entrée, portes-patio et portes commerciales<span class="arr">→</span></div>
-          <div class="svc">Murs-rideaux et vitrines commerciales<span class="arr">→</span></div>
-          <div class="svc">Évaluation et soumission sur place<span class="arr">→</span></div>
-          <div class="svc">Travaux par phases en bâtiment occupé<span class="arr">→</span></div>
-        </div>
-        <a class="div-more" href="portes-et-fenetres/">En savoir plus →</a>
-      </div>
-    </div>
-  </div>
-  <div class="div-card">
-    <div class="div-hatch"></div><div class="div-n">03</div>
-    <div class="div-body">
-      <div class="div-tag">Excavation, fondations et béton</div>
-      <h2 class="div-t"><a href="excavation/">Entrepreneur<br>en Excavation</a></h2>
-      <p class="div-desc">Travaux de fondation, de drainage et de béton réalisés avec rigueur, pour assurer la durabilité et la sécurité de votre bâtiment.</p>
-      <div>
-        <div class="svc">Fondations<span class="arr">→</span></div>
-        <div class="svc">Drains français<span class="arr">→</span></div>
-        <div class="svc">Cours anglaises<span class="arr">→</span></div>
-        <div class="svc">Perrons et patios de béton<span class="arr">→</span></div>
-        <div class="svc">Nivellement de terrain<span class="arr">→</span></div>
-        <div class="svc">Excavation générale<span class="arr">→</span></div>
-      </div>
-      <a class="div-more" href="excavation/">En savoir plus →</a>
     </div>
   </div>
 </section>
 
-<section class="why" id="why">
-  <div>
-    <div class="sec-label">Pourquoi Stratimo</div>
-    <h2 class="sec-t">Nouveau nom.<span class="lt">Vraie expertise.</span></h2>
-    <p class="sec-p">Startup ne veut pas dire inexpérimenté. Stratimo est fondée par un professionnel qui connaît le secteur de l'intérieur — avec la rigueur d'un entrepreneur licencié RBQ et l'agilité d'une structure à taille humaine. Votre projet reçoit l'attention qu'il mérite, du devis à la livraison.</p>
+<section class="sec">
+  <div class="sec-head">
+    <div class="sec-label">Entrepreneur général</div>
+    <h2 class="sec-t">Ce que nous faisons<span class="lt">de A à Z.</span></h2>
   </div>
-  <div class="why-grid">
-    <div class="wc"><div class="wc-badge">RBQ</div><div class="wc-t">Licencié & assuré</div><div class="wc-p">Licence no. 5875-3856-01. Responsabilité civile complète sur chaque chantier, sans exception.</div></div>
-    <div class="wc"><div class="wc-badge">Terrain</div><div class="wc-t">Fondateur présent</div><div class="wc-p">Pas d'intermédiaire. Le fondateur supervise chaque projet et répond directement à vos questions.</div></div>
-    <div class="wc"><div class="wc-badge">Tarifs</div><div class="wc-t">Prix compétitifs</div><div class="wc-p">Sans les frais des grandes firmes, des tarifs serrés sans compromis sur la qualité de la finition.</div></div>
-    <div class="wc"><div class="wc-badge">24h</div><div class="wc-t">Réponse rapide</div><div class="wc-p">Chaque appel et courriel reçoit une réponse le jour même. Jamais laissé sans nouvelles.</div></div>
+  <div class="cards">
+      <div class="card"><div class="card-n">01</div><h3>Construction neuve</h3><p>Maisons, multilogements et bâtiments commerciaux : planification, coordination des corps de métier et suivi de chantier jusqu'à la livraison.</p></div>
+      <div class="card"><div class="card-n">02</div><h3>Agrandissements</h3><p>Ajout d'étage, rallonge ou garage, intégrés à votre bâtiment existant.</p></div>
+      <div class="card"><div class="card-n">03</div><h3>Rénovations intérieures et extérieures</h3><p>Cuisines, salles de bain, sous-sols, revêtement, balcons et galeries : nous rénovons et mettons en valeur votre propriété.</p></div>
+      <div class="card"><div class="card-n">04</div><h3>Réparation après sinistre</h3><p>Remise en état de votre propriété après un dégât d'eau, un incendie ou une tempête, de l'évaluation des dommages jusqu'à la fin des travaux.</p></div>
+      <div class="card"><div class="card-n">05</div><h3>Aménagement commercial</h3><p>Bureaux, commerces et locaux locatifs aménagés selon vos besoins et ceux de vos locataires.</p></div>
+      <div class="card"><div class="card-n">06</div><h3>Gestion de projet clé en main</h3><p>Échéancier, budget et coordination des sous-traitants : vous n'avez qu'une personne à appeler.</p></div>
   </div>
 </section>
 
@@ -574,21 +532,55 @@ footer{background:var(--ink3)}
   </div>
 </section>
 
+<section class="sec">
+  <div class="sec-head">
+    <div class="sec-label">Zone desservie</div>
+    <h2 class="sec-t">Grand Montréal<span class="lt">et environs.</span></h2>
+    <p class="sec-p">Nous réalisons des projets résidentiels et commerciaux à Montréal, à Laval, sur la Rive-Nord et dans les Laurentides jusqu'à Sainte-Agathe.</p>
+    <div class="zone"><span>Montréal</span><span>Laval</span><span>Rive-Nord</span><span>Laurentides</span></div>
+  </div>
+</section>
+
+<section class="sec alt">
+  <div class="sec-head">
+    <div class="sec-label">Questions fréquentes</div>
+    <h2 class="sec-t">Avant de<span class="lt">commencer.</span></h2>
+  </div>
+  <div class="faq">
+    <details><summary>La soumission est-elle gratuite ?</summary><p>Oui. La soumission est gratuite et sans engagement. Nous prenons le temps de bien comprendre votre projet avant de vous proposer quoi que ce soit.</p></details>
+    <details><summary>Êtes-vous licencié et assuré ?</summary><p>Oui. Stratimo Construction détient la licence d'entrepreneur général RBQ 5875-3856-01 et une assurance responsabilité civile qui couvre chaque chantier.</p></details>
+    <details><summary>Faites-vous des projets commerciaux ?</summary><p>Oui. Nous travaillons pour des propriétaires de maisons, d'immeubles multilogements et de bâtiments commerciaux.</p></details>
+    <details><summary>Quel est votre délai de réponse ?</summary><p>Chaque demande reçoit une réponse le jour même, au plus tard dans les 24 heures.</p></details>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-head">
+    <div class="sec-label">Nos autres services</div>
+    <h2 class="sec-t">Trois expertises.<span class="lt">Une vision.</span></h2>
+  </div>
+  <div class="others">
+    <a class="other" href="portes-et-fenetres/"><small>Résidentiel &amp; commercial</small><strong>Portes et fenêtres</strong><span>Voir le service →</span></a>
+    <a class="other" href="excavation/"><small>Excavation, fondations et béton</small><strong>Excavation</strong><span>Voir le service →</span></a>
+  </div>
+</section>
+
 <section class="contact" id="contact">
   <div>
     <div class="sec-label">Nous joindre</div>
     <h2 class="sec-t">Parlons de<span class="lt">votre projet.</span></h2>
     <p class="sec-p">Soumission gratuite, sans engagement. On prend le temps de bien comprendre votre projet avant de vous proposer quoi que ce soit.</p>
     <div class="cnt-infos">
-      <div class="ci"><div class="ci-dot">TÉL</div><div><strong>Téléphone</strong><span>(514) 433-3280</span></div></div>
+      <div class="ci"><div class="ci-dot">TÉL</div><div><strong>Téléphone</strong><span><a href="tel:+15144333280" style="color:inherit;text-decoration:none;">(514) 433-3280</a></span></div></div>
       <div class="ci"><div class="ci-dot">@</div><div><strong>Courriel</strong><span><a href="mailto:infostratimo@gmail.com" style="color:inherit;text-decoration:none;">infostratimo@gmail.com</a></span></div></div>
       <div class="ci"><div class="ci-dot">RBQ</div><div><strong>Licence RBQ</strong><span>5875-3856-01</span></div></div>
-      <div class="ci"><div class="ci-dot">MTL</div><div><strong>Zone de service</strong><span>Grand Montréal & environs</span></div></div>
+      <div class="ci"><div class="ci-dot">MTL</div><div><strong>Zone de service</strong><span>Grand Montréal &amp; environs</span></div></div>
     </div>
   </div>
   <form class="cf" id="contact-form">
     <input type="hidden" name="_replyto" value="infostratimo@gmail.com">
-    <input type="hidden" name="_subject" value="Nouvelle demande — Stratimo Construction">
+    <input type="hidden" name="_subject" value="Nouvelle demande (Entrepreneur général) — Stratimo Construction">
+    <input type="hidden" name="page" value="Entrepreneur général">
     <div class="frow">
       <div class="ff"><div class="fl">Nom</div><input type="text" name="nom" placeholder="Prénom et nom" required></div>
       <div class="ff"><div class="fl">Téléphone</div><input type="tel" name="telephone" placeholder="(514) 000-0000"></div>
@@ -596,39 +588,22 @@ footer{background:var(--ink3)}
     <div class="ff"><div class="fl">Courriel</div><input type="email" name="courriel" placeholder="votre@courriel.com" required></div>
     <div class="ff">
       <div class="fl">Type de projet</div>
-      <select name="type_projet"><option value="" disabled selected>Sélectionner…</option><option>Construction neuve</option><option>Agrandissement</option><option>Réparation après sinistre</option><option>Rénovations intérieures</option><option>Rénovations extérieures</option><option>Portes et fenêtres</option><option>Fondations</option><option>Drain français</option><option>Cour anglaise</option><option>Perron ou patio de béton</option><option>Nivellement de terrain</option><option>Excavation générale</option><option>Autre</option></select>
+      <select name="type_projet"><option value="" disabled>Sélectionner…</option><option selected>Construction neuve</option><option>Agrandissement</option><option>Réparation après sinistre</option><option>Rénovations intérieures</option><option>Rénovations extérieures</option><option>Portes et fenêtres</option><option>Fondations</option><option>Drain français</option><option>Cour anglaise</option><option>Perron ou patio de béton</option><option>Nivellement de terrain</option><option>Excavation générale</option><option>Autre</option></select>
     </div>
     <div class="ff"><div class="fl">Détails du projet</div><textarea name="details" placeholder="Décrivez votre projet…"></textarea></div>
     <button type="submit" class="btn-send" id="btn-send">Envoyer la demande →</button>
   </form>
-<div id="form-success" style="display:none;margin-top:1.5rem;padding:1.2rem 1.5rem;background:rgba(90,170,100,.12);border:1px solid rgba(90,170,100,.3);">
-  <div style="font-family:var(--fh);font-size:.85rem;font-weight:600;color:#7dd4a0;letter-spacing:.04em;margin-bottom:.25rem;">MESSAGE ENVOYÉ ✓</div>
+<div id="form-success" style="display:none;margin-top:1.5rem;padding:1.2rem 1.5rem;">
+  <div style="font-family:var(--fh);font-size:.85rem;font-weight:600;letter-spacing:.04em;margin-bottom:.25rem;">MESSAGE ENVOYÉ ✓</div>
   <div style="font-size:.8rem;color:var(--muted);">Nous vous répondons dans les 24 heures.</div>
 </div>
 </section>
 
 <footer>
-  <div class="f-logo"><img src="logo.png" alt="Stratimo Construction"></div>
+  <div class="f-logo"><a href="./"><img src="logo.png" alt="Stratimo Construction"></a></div>
   <div class="f-copy">© 2025 Stratimo Construction Inc. — Licence RBQ 5875-3856-01</div>
-  <div class="f-links"><a href="#services">Services</a><a href="#why">Expertise</a><a href="#contact">Contact</a></div>
-<div style="position:absolute;left:-9999px;top:-9999px;" aria-hidden="true">
-<h1>Stratimo Construction — Entrepreneur Général, Rénovations &amp; Excavation</h1>
-<h2>Entrepreneur général à Montréal</h2>
-<p>Stratimo Construction offre des services d'entrepreneur général à Montréal, Laval, la Rive-Nord et les Laurentides jusqu'à Sainte-Agathe. Construction neuve, agrandissement, coordination de sous-traitants et gestion de projet clé en main. Entrepreneur licencié RBQ 5875-3856-01.</p>
-<h2>Entrepreneur en rénovations à Montréal</h2>
-<p>Stratimo Construction réalise des rénovations résidentielles et commerciales à Montréal, Laval, Rive-Nord et les Laurentides jusqu'à Sainte-Agathe. Rénovations intérieures, extérieures, portes et fenêtres, résidentiel et commercial.</p>
-<h2>Entrepreneur en excavation à Montréal</h2>
-<p>Stratimo Construction offre des services d'excavation résidentielle et commerciale à Montréal, Laval, la Rive-Nord et les Laurentides jusqu'à Sainte-Agathe. Nos services incluent les fondations, le drainage, les perrons et balcons de béton ainsi que la construction neuve. Entrepreneur licencié RBQ 5875-3856-01.</p>
-<p>Stratimo Construction Inc. | RBQ 5875-3856-01 | (514) 433-3280 | Montréal | Laval | Rive-Nord | Laurentides | Sainte-Agathe</p>
-</div>
-<div style="position:absolute;left:-9999px;top:-9999px;" aria-hidden="true">
-<h2>Entrepreneur général Montréal — Stratimo Construction</h2>
-<p>Stratimo Construction est votre entrepreneur général à Montréal, Laval, Rive-Nord et les Laurentides. Spécialisés en excavation résidentielle et commerciale, fondations, drainage, perrons et balcons de béton, construction neuve, et installation de portes et fenêtres. Licencié RBQ 5875-3856-01.</p>
-<h2>General Contractor Montreal — Stratimo Construction</h2>
-<p>Stratimo Construction is your trusted general contractor serving Montreal, Laval, North Shore and the Laurentians. We specialize in residential and commercial excavation, foundation installation, drainage, concrete steps and balconies, new building construction, and doors and windows installation. Licensed contractor RBQ 5875-3856-01. Free estimate — call (514) 433-3280.</p>
-</div>
+  <div class="f-links"><a href="./">Entrepreneur général</a><a href="portes-et-fenetres/">Portes et fenêtres</a><a href="excavation/">Excavation</a><a href="#contact">Contact</a></div>
 </footer>
-
 
 <script>
 const nav=document.getElementById('nav');
@@ -671,3 +646,10 @@ if(_cf){
   });
 }
 </script>
+<script>
+(function(){var n=document.getElementById("nav"),b=document.getElementById("nav-burger");if(!n||!b)return;
+b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false");});
+n.querySelectorAll(".nav-links a").forEach(function(a){a.addEventListener("click",function(){n.classList.remove("open");b.setAttribute("aria-expanded","false");});});})();
+</script>
+</body>
+</html>
