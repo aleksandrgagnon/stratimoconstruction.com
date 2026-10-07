@@ -447,6 +447,11 @@ footer{background:var(--ink3)}
 .other strong{display:block;font-family:var(--fh);font-size:1.6rem;font-weight:800;text-transform:uppercase;color:var(--white);margin:.4rem 0 .5rem;line-height:1}
 .other span{font-size:.85rem;color:var(--silver);font-weight:300}
 .nav-logo a{display:block}
+.nav-burger{display:none;width:44px;height:44px;border:1px solid var(--line2);background:#fff;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:0}
+.nav-burger span{display:block;width:20px;height:2px;background:var(--white);transition:transform .2s,opacity .2s}
+nav.open .nav-burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+nav.open .nav-burger span:nth-child(2){opacity:0}
+nav.open .nav-burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 .nav-links a.on{color:var(--white)}
 @media(max-width:900px){
   .ph-inner{grid-template-columns:1fr}
@@ -455,6 +460,11 @@ footer{background:var(--ink3)}
   .cards{grid-template-columns:1fr}
   .others{grid-template-columns:1fr}
   .sec{padding:3.5rem 6vw}
+  .nav-burger{display:flex}
+  nav.open .nav-links{display:flex;position:absolute;top:72px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#fff;padding:.4rem 6vw 1.4rem;border-bottom:1px solid var(--line2);box-shadow:0 12px 24px rgba(20,30,60,.08)}
+  nav.open .nav-links a{padding:1rem 0;border-bottom:1px solid var(--line);font-size:.9rem;color:var(--white)}
+  nav.open .nav-links a.nav-cta{margin-top:1rem;border-bottom:none;text-align:center;padding:.9rem 1.5rem}
+  .f-links{flex-wrap:wrap;gap:1rem 1.6rem}
 }
 </style>
 </head>
@@ -463,11 +473,12 @@ footer{background:var(--ink3)}
 <nav id="nav">
   <div class="nav-logo"><a href="../"><img src="../logo.png" alt="Stratimo Construction"></a></div>
   <div class="nav-links">
-    <a href="../entrepreneur-general/">Entrepreneur général</a>
+    <a href="../">Entrepreneur général</a>
     <a href="../portes-et-fenetres/" class="on">Portes et fenêtres</a>
     <a href="../excavation/">Excavation</a>
     <a href="#contact" class="nav-cta">Soumission gratuite</a>
   </div>
+  <button class="nav-burger" id="nav-burger" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
 </nav>
 
 <section class="ph">
@@ -475,7 +486,7 @@ footer{background:var(--ink3)}
   <div class="hero-glow"></div>
   <div class="ph-inner">
     <div class="ph-l">
-      <div class="crumbs"><a href="../">Accueil</a><span>/</span><a href="../#services">Services</a><span>/</span>Portes et fenêtres</div>
+      <div class="crumbs"><a href="../">Accueil</a><span>/</span>Portes et fenêtres</div>
       <div class="eyebrow">Résidentiel &amp; commercial — Grand Montréal</div>
       <h1>Portes et fenêtres <span class="stroke">résidentiel et commercial</span></h1>
       <p class="hero-desc">Remplacement de portes et fenêtres pour maisons, multilogements et bâtiments commerciaux. Des travaux planifiés pour limiter les dérangements pour vos occupants et vos activités.</p>
@@ -550,7 +561,7 @@ footer{background:var(--ink3)}
     <h2 class="sec-t">Trois expertises.<span class="lt">Une vision.</span></h2>
   </div>
   <div class="others">
-    <a class="other" href="../entrepreneur-general/"><small>Construction et rénovation</small><strong>Entrepreneur général</strong><span>Voir le service →</span></a>
+    <a class="other" href="../"><small>Construction et rénovation</small><strong>Entrepreneur général</strong><span>Voir le service →</span></a>
     <a class="other" href="../excavation/"><small>Excavation, fondations et béton</small><strong>Excavation</strong><span>Voir le service →</span></a>
   </div>
 </section>
@@ -592,7 +603,7 @@ footer{background:var(--ink3)}
 <footer>
   <div class="f-logo"><a href="../"><img src="../logo.png" alt="Stratimo Construction"></a></div>
   <div class="f-copy">© 2025 Stratimo Construction Inc. — Licence RBQ 5875-3856-01</div>
-  <div class="f-links"><a href="../">Accueil</a><a href="../#services">Services</a><a href="#contact">Contact</a></div>
+  <div class="f-links"><a href="../">Entrepreneur général</a><a href="../portes-et-fenetres/">Portes et fenêtres</a><a href="../excavation/">Excavation</a><a href="#contact">Contact</a></div>
 </footer>
 
 <script>
@@ -635,6 +646,11 @@ if(_cf){
     }
   });
 }
+</script>
+<script>
+(function(){var n=document.getElementById("nav"),b=document.getElementById("nav-burger");if(!n||!b)return;
+b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false");});
+n.querySelectorAll(".nav-links a").forEach(function(a){a.addEventListener("click",function(){n.classList.remove("open");b.setAttribute("aria-expanded","false");});});})();
 </script>
 </body>
 </html>
