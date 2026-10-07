@@ -447,8 +447,19 @@ footer{background:var(--ink3)}
 .other strong{display:block;font-family:var(--fh);font-size:1.6rem;font-weight:800;text-transform:uppercase;color:var(--white);margin:.4rem 0 .5rem;line-height:1}
 .other span{font-size:.85rem;color:var(--silver);font-weight:300}
 .nav-logo a{display:block}
+.stat{position:relative;z-index:1;text-align:center;margin-bottom:2rem}
+.stat-n{font-family:var(--fh);font-size:6rem;font-weight:900;line-height:.9;color:var(--white)}
+.stat-n small{font-size:2rem;font-weight:700;margin-left:.4rem;color:var(--steel);text-transform:uppercase}
+.stat-l{font-family:var(--fh);font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:.6rem}
+.ph-r{flex-direction:column}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+.duo-card{background:#fff;padding:2.4rem 2.2rem}
+.duo-card h3{font-family:var(--fh);font-size:1.4rem;font-weight:800;text-transform:uppercase;color:var(--white);margin-bottom:.7rem}
+.duo-card p{font-size:.92rem;color:var(--silver);line-height:1.8;font-weight:300}
+.duo-note{margin-top:2rem;max-width:760px;font-size:1rem;color:var(--chalk);line-height:1.8;border-left:3px solid var(--navy);padding-left:1.2rem}
+.others.three{grid-template-columns:repeat(3,1fr)}
 .nav-links a{white-space:nowrap}
-@media(max-width:1150px){.nav-links{gap:1.3rem}.nav-links a{letter-spacing:.08em}}
+@media(max-width:1400px){.nav-links{gap:1.3rem}.nav-links a{letter-spacing:.08em}}
 .nav-burger{display:none;width:44px;height:44px;border:1px solid var(--line2);background:#fff;cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:0}
 .nav-burger span{display:block;width:20px;height:2px;background:var(--white);transition:transform .2s,opacity .2s}
 nav.open .nav-burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
@@ -460,11 +471,11 @@ nav.open .nav-burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)
   .ph-l{border-right:none;border-bottom:1px solid var(--line);padding:3.5rem 6vw}
   .ph-r{padding:2.5rem 6vw}
   .cards{grid-template-columns:1fr}
-  .others{grid-template-columns:1fr}
+  .others,.others.three,.duo{grid-template-columns:1fr}
   .sec{padding:3.5rem 6vw}
   .f-links{flex-wrap:wrap;gap:1rem 1.6rem}
 }
-@media(max-width:1060px){
+@media(max-width:1200px){
   .nav-links{display:none}
   .nav-burger{display:flex}
   nav.open .nav-links{display:flex;position:absolute;top:72px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:#fff;padding:.4rem 6vw 1.4rem;border-bottom:1px solid var(--line2);box-shadow:0 12px 24px rgba(20,30,60,.08)}
@@ -478,7 +489,8 @@ nav.open .nav-burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)
 <nav id="nav">
   <div class="nav-logo"><a href="../"><img src="../logo.png" alt="Stratimo Construction"></a></div>
   <div class="nav-links">
-    <a href="../">Entrepreneur général</a>
+    <a href="../">À propos</a>
+    <a href="../entrepreneur-general/">Entrepreneur général</a>
     <a href="../portes-et-fenetres/" class="on">Portes et fenêtres</a>
     <a href="../excavation/">Excavation / Fondation</a>
     <a href="#contact" class="nav-cta">Soumission gratuite</a>
@@ -597,7 +609,7 @@ nav.open .nav-burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)
 <footer>
   <div class="f-logo"><a href="../"><img src="../logo.png" alt="Stratimo Construction"></a></div>
   <div class="f-copy">© 2025 Stratimo Construction Inc. — Licence RBQ 5875-3856-01</div>
-  <div class="f-links"><a href="../">Entrepreneur général</a><a href="../portes-et-fenetres/">Portes et fenêtres</a><a href="../excavation/">Excavation / Fondation</a><a href="#contact">Contact</a></div>
+  <div class="f-links"><a href="../">À propos</a><a href="../entrepreneur-general/">Entrepreneur général</a><a href="../portes-et-fenetres/">Portes et fenêtres</a><a href="../excavation/">Excavation / Fondation</a><a href="#contact">Contact</a></div>
 </footer>
 
 <script>
