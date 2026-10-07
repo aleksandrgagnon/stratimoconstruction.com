@@ -339,6 +339,71 @@ footer{
   .nav-links{display:none}
   .hero-wm{display:none}
 }
+/* ===== THÈME CLAIR (oct. 2026) — remplace les couleurs sombres ===== */
+:root{
+  --ink:#ffffff;
+  --ink2:#f4f6fa;
+  --ink3:#e9eef5;
+  --navy:#33415c;
+  --navy2:#24314a;
+  --steel:#3b5a8f;
+  --muted:#5b6880;
+  --silver:#46536b;
+  --light:#2f3b52;
+  --chalk:#1f2a40;
+  --white:#141d30;
+  --line:rgba(30,45,80,.10);
+  --line2:rgba(30,45,80,.18);
+}
+nav{background:rgba(255,255,255,.95)}
+nav.scrolled{box-shadow:0 2px 24px rgba(20,30,60,.08)}
+.nav-cta{color:#fff!important;background:var(--navy)}
+.nav-cta:hover{background:var(--navy2)!important}
+.hero-grid{background-image:linear-gradient(rgba(30,45,80,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(30,45,80,.05) 1px,transparent 1px)}
+.hero-glow{background:radial-gradient(ellipse,rgba(59,90,143,.10) 0%,transparent 65%)}
+.hero-wm{opacity:.04}
+.id-band::after{opacity:.04}
+h1 .stroke{-webkit-text-stroke:2px rgba(51,65,92,.55)}
+.btn-p,.btn-send{color:#fff;background:var(--navy)}
+.btn-p:hover,.btn-send:hover{background:var(--navy2)}
+.hero-r::before,.hero-r::after{border-color:rgba(30,45,80,.08)}
+.cred{background:#fff}
+.cred:hover{background:#fff;border-color:var(--steel)}
+.cred-pill,.rbq-icon,.ci-dot{color:#fff}
+.hero-bar{background:var(--ink3)}
+.id-band{background:var(--ink3);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.id-sep{background:var(--line2)}
+.id-text p{color:var(--silver)}
+.id-tag{border-color:var(--line2)}
+.rbq-band{background:#fff}
+.rbq-badge{background:var(--ink2)}
+.div-card{background:var(--ink2)}
+.div-card+.div-card,.divisions>div{border-color:var(--line)!important}
+.div-card[style*="border-top"]{border-top-color:var(--line)!important}
+.div-hatch{opacity:.035;background-image:repeating-linear-gradient(45deg,#33415c 0,#33415c 1px,transparent 0,transparent 50%)}
+.div-n{color:rgba(51,65,92,.06)}
+.div-body{background:linear-gradient(to top,rgba(255,255,255,.92) 0%,rgba(255,255,255,.35) 100%);border-top-color:var(--line)}
+.div-desc{color:var(--silver)}
+.svc{color:var(--light);border-bottom-color:var(--line)}
+.svc:hover{color:var(--steel)}
+.arr{color:var(--steel)}
+.why{background:#fff}
+.wc{background:#fff}
+.wc:hover{background:var(--ink2)}
+.process{background:var(--ink2)}
+.step-n{background:#fff}
+.step:hover .step-n{color:#fff}
+.contact{background:#fff}
+.ci{background:var(--ink2)}
+.ci:hover{background:var(--ink3)}
+.ff,.fl,input,textarea,select{background:var(--ink2)}
+input:focus,textarea:focus,select:focus{background:#fff}
+select option{background:#fff}
+#form-success{background:rgba(31,122,69,.08)!important;border-color:rgba(31,122,69,.3)!important}
+#form-success>div:first-child{color:#1f7a45!important}
+footer{background:var(--ink3)}
+.f-logo img{opacity:1}
+.f-links a:hover{color:var(--steel)}
 </style>
 </head>
 <body>
@@ -393,13 +458,11 @@ footer{
   <div class="id-sep"></div>
   <div class="id-text">
     <h2>Trois expertises. Une vision.</h2>
-    <p>Stratimo Construction regroupe l'entrepreneuriat général, les rénovations et l'excavation sous un même toit rigoureux — fondé sur l'expertise terrain et la transparence absolue.</p>
+    <p>Stratimo Construction regroupe l'entrepreneuriat général, les portes et fenêtres et l'excavation sous un même toit rigoureux — fondé sur l'expertise terrain et la transparence absolue.</p>
     <div class="id-tags">
-      <span class="id-tag">Entrepreneur Général</span>
-      <span class="id-tag">Rénovations</span>
+      <span class="id-tag">Entrepreneur général</span>
+      <span class="id-tag">Portes &amp; fenêtres</span>
       <span class="id-tag">Excavation</span>
-      <span class="id-tag">Fondations</span>
-      <span class="id-tag">Grand Montréal</span>
     </div>
   </div>
 </div>
