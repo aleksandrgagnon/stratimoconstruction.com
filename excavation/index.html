@@ -447,6 +447,41 @@ footer{background:var(--ink3)}
 .other strong{display:block;font-family:var(--fh);font-size:1.6rem;font-weight:800;text-transform:uppercase;color:var(--white);margin:.4rem 0 .5rem;line-height:1}
 .other span{font-size:.85rem;color:var(--silver);font-weight:300}
 .nav-logo a{display:block}
+.feats{display:flex;flex-direction:column;gap:7rem;margin-top:1rem}
+.feat{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:5.5rem;align-items:center}
+.feat:nth-child(even) .feat-media{order:2}
+.feat-media{position:relative;margin:0 1.5rem 1.5rem 0}
+.feat:nth-child(even) .feat-media{margin:0 0 1.5rem 1.5rem}
+.feat-media::before{content:'';position:absolute;inset:1.5rem -1.5rem -1.5rem 1.5rem;background:var(--navy)}
+.feat:nth-child(even) .feat-media::before{inset:1.5rem 1.5rem -1.5rem -1.5rem}
+.feat-media::after{content:'';position:absolute;inset:0;border:1px solid rgba(255,255,255,.35);pointer-events:none;z-index:2}
+.feat-media img{position:relative;z-index:1;display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;filter:saturate(.92) contrast(1.04);transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.feat:hover .feat-media img{transform:translate(-6px,-6px)}
+.feat:nth-child(even):hover .feat-media img{transform:translate(6px,-6px)}
+.feat-n{font-family:var(--fh);font-weight:900;font-size:5.5rem;line-height:.8;color:transparent;-webkit-text-stroke:1.5px var(--steel);margin-bottom:1.4rem;letter-spacing:-.02em}
+.feat-body h3{font-family:var(--fh);font-weight:800;font-size:clamp(2rem,3.2vw,3rem);line-height:.95;text-transform:uppercase;color:var(--white);margin-bottom:1.1rem;letter-spacing:-.01em}
+.feat-body p{font-size:1.02rem;line-height:1.8;color:var(--silver);font-weight:300;max-width:440px;margin-bottom:1.8rem}
+.feat-cta{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--fh);font-size:.82rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--navy);text-decoration:none;padding-bottom:.35rem;border-bottom:2px solid var(--navy)}
+.feat-cta span{transition:transform .2s}
+.feat-cta:hover span{transform:translateX(5px)}
+.tiles-head{display:flex;align-items:center;gap:1.2rem;margin:7rem 0 2rem;font-family:var(--fh);font-size:.75rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--steel)}
+.tiles-head::after{content:'';flex:1;height:1px;background:var(--line2)}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.tile{position:relative;background:var(--ink2);padding:2.4rem 2.2rem 2.6rem;border-top:3px solid var(--navy);transition:transform .25s,box-shadow .25s,background .25s}
+.tile:hover{transform:translateY(-4px);background:#fff;box-shadow:0 20px 40px rgba(20,30,60,.10)}
+.tile-n{position:absolute;top:1.4rem;right:1.6rem;font-family:var(--fh);font-weight:900;font-size:2.6rem;line-height:1;color:rgba(51,65,92,.12)}
+.tile h3{font-family:var(--fh);font-weight:800;font-size:1.45rem;text-transform:uppercase;color:var(--white);margin-bottom:.7rem;letter-spacing:.01em}
+.tile p{font-size:.92rem;line-height:1.75;color:var(--silver);font-weight:300}
+.cards.list:not(:has(*)){display:none}
+.cards.list{display:flex;flex-direction:column;gap:0;background:none}
+.cards.list .card{display:grid;grid-template-columns:1fr;align-content:center;padding:2.2rem 2.4rem;border-bottom:1px solid var(--line)}
+.cards.list .card:last-child{border-bottom:none}
+.cards.list .card>*{grid-column:1}
+.cards.list .card:has(.card-img){grid-template-columns:minmax(0,1fr) 380px;column-gap:3rem}
+.cards.list .card-txt{grid-column:1;grid-row:1;align-self:center}
+.cards.list .card-img{grid-column:2;grid-row:1;align-self:center;display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;background:var(--ink3)}
+.cards.list .card h3{font-size:1.4rem}
+.cards.list .card p{font-size:.95rem;max-width:560px}
 .stat{position:relative;z-index:1;text-align:center;margin-bottom:2rem}
 .stat-n{font-family:var(--fh);font-size:6rem;font-weight:900;line-height:.9;color:var(--white)}
 .stat-n small{font-size:2rem;font-weight:700;margin-left:.4rem;color:var(--steel);text-transform:uppercase}
@@ -472,6 +507,19 @@ nav.open .nav-burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)
   .ph-r{padding:2.5rem 6vw}
   .cards{grid-template-columns:1fr}
   .others,.others.three,.duo{grid-template-columns:1fr}
+  .feat{grid-template-columns:1fr;gap:2.5rem}
+  .feat:nth-child(even) .feat-media{order:0;margin:0 1.2rem 1.2rem 0}
+  .feat:nth-child(even) .feat-media::before{inset:1.2rem -1.2rem -1.2rem 1.2rem}
+  .feat-media{margin:0 1.2rem 1.2rem 0}
+  .feat-media::before{inset:1.2rem -1.2rem -1.2rem 1.2rem}
+  .feats{gap:4.5rem}
+  .feat-n{font-size:4rem}
+  .tiles{grid-template-columns:1fr}
+  .tiles-head{margin-top:4.5rem}
+  .cards.list .card:has(.card-img){grid-template-columns:1fr}
+  .cards.list .card-img{grid-column:1;grid-row:1;margin-bottom:1.3rem}
+  .cards.list .card:has(.card-img) .card-txt{grid-row:2}
+  .cards.list .card{padding:1.8rem 1.4rem}
   .sec{padding:3.5rem 6vw}
   .f-links{flex-wrap:wrap;gap:1rem 1.6rem}
 }
@@ -527,13 +575,40 @@ nav.open .nav-burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)
     <div class="sec-label">Excavation / Fondation</div>
     <h2 class="sec-t">Nos services<span class="lt">excavation et fondation.</span></h2>
   </div>
-  <div class="cards">
-      <div class="card"><div class="card-n">01</div><h3>Réparation de fissures par injection</h3><p>Colmatage des fissures de fondation par injection pour bloquer les infiltrations d'eau et protéger votre sous-sol.</p></div>
-      <div class="card"><div class="card-n">02</div><h3>Imperméabilisation</h3><p>Imperméabilisation des murs de fondation contre l'humidité et les infiltrations d'eau.</p></div>
-      <div class="card"><div class="card-n">03</div><h3>Drain français</h3><p>Remplacement et installation de drains français pour évacuer l'eau autour de la fondation.</p></div>
-      <div class="card"><div class="card-n">04</div><h3>Nivellement</h3><p>Nivellement du terrain pour éloigner l'eau du bâtiment et assurer un bon drainage.</p></div>
-      <div class="card"><div class="card-n">05</div><h3>Fondations</h3><p>Fondations pour constructions neuves et agrandissements, et réparation de fondations existantes.</p></div>
-      <div class="card"><div class="card-n">06</div><h3>Perrons de béton</h3><p>Construction et remplacement de perrons et de marches de béton durables.</p></div>
+  <div class="feats">
+    <article class="feat">
+      <div class="feat-media"><img src="fissure.webp" alt="Réparation de fissures par injection" loading="lazy" width="480" height="360"></div>
+      <div class="feat-body">
+        <div class="feat-n">01</div>
+        <h3>Réparation de fissures par injection</h3>
+        <p>Colmatage des fissures de fondation par injection pour bloquer les infiltrations d'eau et protéger votre sous-sol.</p>
+        <a class="feat-cta" href="#contact">Demander une soumission <span>→</span></a>
+      </div>
+    </article>
+    <article class="feat">
+      <div class="feat-media"><img src="impermeabilisation.webp" alt="Imperméabilisation" loading="lazy" width="480" height="360"></div>
+      <div class="feat-body">
+        <div class="feat-n">02</div>
+        <h3>Imperméabilisation</h3>
+        <p>Imperméabilisation des murs de fondation contre l'humidité et les infiltrations d'eau.</p>
+        <a class="feat-cta" href="#contact">Demander une soumission <span>→</span></a>
+      </div>
+    </article>
+    <article class="feat">
+      <div class="feat-media"><img src="perron.webp" alt="Perrons de béton" loading="lazy" width="480" height="360"></div>
+      <div class="feat-body">
+        <div class="feat-n">03</div>
+        <h3>Perrons de béton</h3>
+        <p>Construction et remplacement de perrons et de marches de béton durables.</p>
+        <a class="feat-cta" href="#contact">Demander une soumission <span>→</span></a>
+      </div>
+    </article>
+  </div>
+  <div class="tiles-head"><span>Aussi offert</span></div>
+  <div class="tiles">
+    <div class="tile"><div class="tile-n">04</div><h3>Drain français</h3><p>Remplacement et installation de drains français pour évacuer l'eau autour de la fondation.</p></div>
+    <div class="tile"><div class="tile-n">05</div><h3>Nivellement</h3><p>Nivellement du terrain pour éloigner l'eau du bâtiment et assurer un bon drainage.</p></div>
+    <div class="tile"><div class="tile-n">06</div><h3>Fondations</h3><p>Fondations pour constructions neuves et agrandissements, et réparation de fondations existantes.</p></div>
   </div>
 </section>
 
