@@ -762,6 +762,7 @@ if(_cf){
         headers:{Accept:'application/json'}
       });
       if(res.ok){
+        if(typeof gtag==='function'){gtag('event','generate_lead',{form_page:(data.get('page')||document.title),project_type:data.get('type_projet')||''});}
         _cf.reset();
         _cf.style.display='none';
         _cs.style.display='block';
@@ -782,6 +783,10 @@ if(_cf){
 (function(){var n=document.getElementById("nav"),b=document.getElementById("nav-burger");if(!n||!b)return;
 b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false");});
 n.querySelectorAll(".nav-links a").forEach(function(a){a.addEventListener("click",function(){n.classList.remove("open");b.setAttribute("aria-expanded","false");});});})();
+</script>
+<script>
+/* Suivi des conversions : clics sur le téléphone et demandes de soumission */
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="tel:"]');if(a&&typeof gtag==='function'){gtag('event','click_to_call',{page_location:location.href,link_text:(a.textContent||'').trim()});}});
 </script>
 </body>
 </html>
